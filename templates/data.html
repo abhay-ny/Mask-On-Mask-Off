@@ -1,0 +1,15 @@
+{% extends "nav.html" %}
+{% block content %}
+{% load static %}
+<div class="container-fluid pt-5">
+    <div class="d-flex flex-column text-center mb-5 pt-5">
+        <h4 class="text-secondary mb-3"></h4>
+        <h1 class="display-4 m-0">Session<span class="text-primary"> Expired</span></h1>
+    </div>
+</div>
+
+<!-- Contact End -->
+{% for i in messages %}
+<script>alert("{{i}}")</script>
+{% endfor %}
+{% endblock %}

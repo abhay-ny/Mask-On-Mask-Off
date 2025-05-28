@@ -1,0 +1,114 @@
+{% extends "nav.html" %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+        }
+
+        .about-section h2 {
+            color: #000000;
+        }
+
+        .topics-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+        }
+
+        .topics-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .team-members {
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center align items */
+            flex-wrap: wrap; /* Wrap items to next line if there's no space */
+        }
+
+        .team-member {
+            text-align: center; /* Center the content */
+            margin: 0 20px 20px 20px; /* Add some margin between team members */
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 2;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section class="about-section">
+        <h1>Our Mission</h1>
+        <p>The mission of secure image encryption is to protect the confidentiality and integrity of images by encrypting them in such a way that only authorized parties can access the original content. This involves employing cryptographic techniques to transform the image data into an unreadable format, making it unintelligible to anyone without the proper decryption key.</p>
+        <h1>Our Primary Goal !</h1>
+        <ul class="topics-list">
+            <li><b>Confidentiality:</b> Ensuring that only authorized users can view the contents of encrypted images. This prevents unauthorized access and protects sensitive information from being disclosed.</li>
+            <li><b>Integrity:</b> Verifying that the encrypted image has not been tampered with or altered in any way during transmission or storage. Encryption algorithms often include integrity checks to detect any unauthorized modifications.</li>
+            <li><b>Authentication:</b> Validating the identity of parties involved in image encryption and decryption processes to prevent spoofing or unauthorized access.</li>
+            <li><b>Non-repudiation:</b> Providing proof of the origin and integrity of encrypted images, preventing senders from denying their involvement in image transmissions.</li>
+            <li><b>Efficiency:</b> Implementing encryption methods that are computationally efficient and suitable for real-time image processing applications without significantly impacting performance.</li>
+        </ul>
+        <h2>Our Website :) </h2>
+        <p>Our webpage on image encryption offers a vital solution for individuals and organizations seeking to safeguard their sensitive visual data. With the prevalence of digital communication and the growing threat of cyberattacks, ensuring the confidentiality and integrity of images has become paramount. By utilizing our platform, customers can encrypt their images with state-of-the-art encryption techniques, ensuring that only authorized parties can access the content. Whether protecting personal photographs, confidential documents, or proprietary designs, our webpage provides a secure environment for storing and sharing images without compromising privacy or security. With user-friendly features and robust security measures, we empower our customers to maintain control over their data and mitigate the risks associated with unauthorized access or data breaches. Trust in our expertise and commitment to data protection, and let us help you safeguard your valuable visual assets with confidence.</p>
+    </section>
+
+    <section class="about-section">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="{% static 'img/disha.jpg' %}" alt="Team Member 1">
+                <h3>Disha A</h3>
+                <p>Role: Project Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'img/abhay.jpg' %}" alt="Team Member 2">
+                <h3>Abhay NY</h3>
+                <p>Role: Development Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'img/bhuvaneshwer.jpg' %}" alt="Team Member 3">
+                <h3>Bhuvaneswer S</h3>
+                <p>Role: Document Lead</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
+{% endblock %}
